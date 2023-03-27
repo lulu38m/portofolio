@@ -208,7 +208,7 @@ body {
 .about{
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -268,5 +268,8 @@ body {
     transform: scale(1.05);
 }
 
-
+.about-right-title i{
+    font-size: 40px;
+    color: var(--jaune);
+}
 

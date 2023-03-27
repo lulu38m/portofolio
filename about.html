@@ -1,72 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="style.css">
-  <title>About me</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>About me</title>
 </head>
 <body>
-  <header class="header">
+<header class="header">
     <div class="logo">
-      <a href="#" class="logo"> Portfolio</a>
+        <a href="#" class="logo"> Portfolio</a>
     </div>
     <nav class="navbar">
-      <a href="index.html"  style="--i:1">Home</a>
-      <a href="about.html" class="active" style="--i:2">About</a>
-      <a href="skills.html" style="--i:3">Skills</a>
-      <a href="#" style="--i:4">contact</a>
+        <a href="index.html" style="--i:1">Home</a>
+        <a href="about.html" class="active" style="--i:2">About</a>
+        <a href="skills.html" style="--i:3">Skills</a>
+        <a href="#" style="--i:4">contact</a>
     </nav>
-  </header>
+</header>
 
-  <section class="about">
-    <div class="about-content">
-      <div class="about-header">
-        <div class="about-img">
-          <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-          <lord-icon
-                  src="https://cdn.lordicon.com/nobciafz.json"
-                  trigger="loop"
-                  delay="1500"
-                  colors="primary:#ffffff,secondary:#f1c40f"
-                  style="width:250px;height:250px">
-          </lord-icon>
+<section class="about">
+    <div class="left">
+        <div class="about-content">
+            <div class="about-header">
+                <div class="about-img">
+                    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                    <lord-icon
+                            src="https://cdn.lordicon.com/nobciafz.json"
+                            trigger="loop"
+                            delay="1500"
+                            colors="primary:#ffffff,secondary:#f1c40f"
+                            style="width:250px;height:250px">
+                    </lord-icon>
+                </div>
+                <div class="about-title">
+                    <h1>About <span class="me"></span></h1>
+                </div>
+            </div>
+            <div class="about-section">
+                <div class="about-text">
+                    <p>I'm lucas moreau,<br>
+                        Passionate student in computer science, currently in first year at <a
+                                href="https://www.supinfo.com/">Supinfo</a>.
+                        Mainly oriented in backend/frontend web development.
+                        Autonomous and enthusiastic, I like to discover new things and undertake new interesting projects.
+                    </p>
+                </div>
+                <div class="social-media">
+                    <a href="#" style="--i:5"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" style="--i:6"><i class='bx bxl-github'></i></a>
+                    <a href="#" style="--i:7"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" style="--i:8"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
         </div>
-        <div class="about-title">
-          <h1>About <span class="me"></span></h1>
-        </div>
-      </div>
-        <div class="about-section">
-          <div class="about-text">
-           <p>I'm lucas moreau,<br>
-             In the first year at <a href="https://www.supinfo.com/">Supinfo</a>.</p>
-          </div>
-      <div class="social-media">
-        <a href="#" style="--i:5"><i class='bx bxl-linkedin'></i></a>
-          <a href="#" style="--i:6"><i class='bx bxl-github'></i></a>
-            <a href="#" style="--i:7"><i class='bx bxl-instagram'></i></a>
-              <a href="#" style="--i:8"><i class='bx bxl-twitter'></i></a>
-      </div>
-
-    <div class="download">
-      <a href="CVMoreauLucas.pdf" download class="btn">download my CV</a>
     </div>
+    <div class="right">
+        <div class="about-content">
+            <div class="about-right-title">
+                <h2>Hobbie</h2>
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon
+                        src="https://cdn.lordicon.com/mlnkdrif.json"
+                        trigger="hover"
+                        colors="primary:#121331,secondary:#f1c40f"
+                        style="width:80px;height:80px">
+                </lord-icon>
+                <i class='bx bxs-tennis-ball bx-rotate-90'></i>
+            </div>
+            <div class="download">
+                <a href="CVMoreauLucas.pdf" download class="btn">download my CV</a>
+            </div>
         </div>
-  </section>
+    </div>
+</section>
 
 
-  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-  <script>
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+<script>
     var typed = new Typed(".me", {
-      strings: ["me",""],
-      typeSpeed: 150,
-      backSpeed: 150,
-      backdelay: 15000,
-      loop: true,
+        strings: ["me", ""],
+        typeSpeed: 150,
+        backSpeed: 150,
+        backdelay: 15000,
+        loop: true,
     })
-  </script>
+</script>
 
 </body>
 </html>
