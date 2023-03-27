@@ -5,4 +5,3 @@ var typed = new Typed(".multiple-text", {
     backdelay: 1500,
     loop: true,
 })
-ieieieie
