@@ -10,16 +10,17 @@ body {
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
-    color : #fff;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,7 +32,8 @@ body {
     align-items: center;
     z-index: 100;
 }
-.logo{
+
+.logo {
     font-size: 25px;
     color: #fff;
     font-weight: 600;
@@ -41,7 +43,7 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
-.navbar a{
+.navbar a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -55,11 +57,11 @@ body {
 }
 
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
     color: var(--jaune);
 }
 
-.home{
+.home {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -69,9 +71,10 @@ body {
     padding: 60px 10% 0;
 }
 
-.home-content{
+.home-content {
     max-width: 600px;
 }
+
 .home-content h3 {
     font-size: 37px;
     font-weight: 700;
@@ -79,16 +82,18 @@ body {
     animation: slideBottom 1s ease forwards;
     animation-delay: .6s;
 }
-.home-content h3:nth-of-type(2){
+
+.home-content h3:nth-of-type(2) {
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
     animation-delay: .6s;
 }
-.home-content h3 span{
-    color : var(--jaune);
+
+.home-content h3 span {
+    color: var(--jaune);
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 58px;
     font-weight: 700;
     margin: -3px 0;
@@ -96,7 +101,8 @@ body {
     animation: slideRight 1s ease forwards;
     animation-delay: .1s;
 }
-.home-content p{
+
+.home-content p {
     font-size: 23px;
     font-weight: 500;
     margin: 30px 0;
@@ -105,7 +111,7 @@ body {
     animation-delay: .2s;
 }
 
-.social-media a{
+.social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -122,64 +128,65 @@ body {
     animation: slideLeft 1s ease forwards;
     animation-delay: .3s;
 }
-.social-media a:hover{
+
+.social-media a:hover {
     background: var(--jaune);
     color: #fff;
     box-shadow: 0 0 8px var(--jaune);
 }
-.home-img{
+
+.home-img {
     padding-bottom: 5%;
 }
 
-@keyframes slideRight{
-    0%{
+@keyframes slideRight {
+    0% {
         opacity: 0;
         transform: translateX(-100px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-@keyframes slideTop{
-    0%{
+@keyframes slideTop {
+    0% {
         opacity: 0;
         transform: translateY(100px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-@keyframes slideBottom{
-    0%{
+@keyframes slideBottom {
+    0% {
         opacity: 0;
         transform: translateY(-100px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-@keyframes slideLeft{
-    0%{
+@keyframes slideLeft {
+    0% {
         opacity: 0;
         transform: translateX(100px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
-
 
 
 /* Page skills*/
 
-.skills{
+.skills {
     position: relative;
     width: 100%;
     height: 40vh;
@@ -189,10 +196,11 @@ body {
     padding: 10px 10% 0;
 }
 
-.skills-content{
+.skills-content {
     max-width: 600px;
 }
-.skills-content h1{
+
+.skills-content h1 {
     font-size: 58px;
     font-weight: 700;
     margin: -3px 0;
@@ -205,7 +213,7 @@ body {
 /* Page About Me */
 
 
-.about{
+.about {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -215,18 +223,20 @@ body {
     padding: 60px 10% 0;
 }
 
-.about-content{
+.about-content {
     max-width: 600px;
 }
-.about-content p{
+
+.about-content p {
     font-size: 23px;
     font-weight: 500;
     margin: 30px 0;
     line-height: 1.5;
-    animation: slideLeft 1s ease forwards;
+    animation: slideRight 1s ease forwards;
     animation-delay: .2s;
 }
-.about-content h1{
+
+.about-content h1 {
     color: var(--jaune);
     font-size: 58px;
     font-weight: 700;
@@ -235,6 +245,31 @@ body {
     animation: slideRight 1s ease forwards;
     animation-delay: .1s;
 }
+
+.social-media-about a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--jaune);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--jaune);
+    text-decoration: none;
+    margin: 20px 15px 20px 0;
+    transition: .5s ease;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .3s;
+}
+
+.social-media-about a:hover {
+    background: var(--jaune);
+    color: #fff;
+    box-shadow: 0 0 8px var(--jaune);
+}
+
 .btn {
     background-color: var(--jaune);
     color: white;
@@ -247,29 +282,100 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
+
 .btn:hover {
     transform: scale(1.05);
 }
-.about-header{
+
+.about-header {
     display: flex;
     align-items: center;
 }
-.about-section{
+
+.about-section {
     margin-left: 50px;
 }
+
 .about-text a {
-     display: inline-block;
-     color: var(--jaune);
-     text-decoration: none;
-     transition: .3s;
- }
+    display: inline-block;
+    color: var(--jaune);
+    text-decoration: none;
+    transition: .3s;
+}
 
 .about-text a:hover {
     transform: scale(1.05);
 }
 
-.about-right-title i{
+.about-right-section {
+    display: flex;
+    align-items: center;
+
+}
+
+.about-right-section i {
     font-size: 40px;
     color: var(--jaune);
 }
+
+.right {
+    margin-right: 5%;
+}
+
+.about-right-title h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 24%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.card-tennis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+    -15px -15px 30px rgb(60, 60, 60);
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .3s;
+    margin-top: 100px;
+    color: white;
+}
+
+.card-tennis i {
+    margin-top: 20px;
+}
+
+.card-bike {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+    -15px -15px 30px rgb(60, 60, 60);
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .3s;
+    margin-top: 100px;
+    margin-right: 50px;
+    color: white;
+}
+
+.card-bike p {
+    margin: 10px;
+    text-align: center;
+}
+
+.card-tennis p {
+    margin: 10px;
+    text-align: center;
+}
+
+
+
 
