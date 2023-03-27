@@ -22,8 +22,20 @@
 
     <section class="skills">
         <div class="skills-content">
-            <h1>My skills</h1>
+            <h1>My <span class="multiple-skills"></span></h1>
         </div>
     </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".multiple-skills", {
+            strings: ["skills","abilities"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backdelay: 1500,
+            loop: true,
+        })
+    </script>
+
 </body>
 </html>
