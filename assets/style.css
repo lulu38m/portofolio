@@ -362,10 +362,10 @@ body {
     padding: 100px 10% 0;
 }
 
-.skills-content {
-    max-width: 600px;
+.skills-header {
+    display: flex;
+    align-items: center;
 }
-
 .skills-content h1 {
     font-size: 58px;
     font-weight: 700;
