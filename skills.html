@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Skills</title>
 </head>
 <body>
@@ -26,29 +26,43 @@
         </div>
 
     </section>
-    <div class="progress">
-        <div class="progress-bar progress-bar1"></div>
-    </div>
 
-    <div class="progress">
-        <div class="progress-bar progress-bar2"></div>
+    <div class="progress1">
+        <p>HTML/CSS</p>
+        <div class="progress">
+            <div class="progress-bar progress-bar1"></div>
+        </div>
     </div>
-
-    <div class="progress">
-        <div class="progress-bar progress-bar3"></div>
+    <div class="progress2">
+        <p>JavaScript</p>
+        <div class="progress">
+            <div class="progress-bar progress-bar2"></div>
+        </div>
     </div>
-
+    <div class="progress3">
+        <p>PHP</p>
+        <div class="progress">
+            <div class="progress-bar progress-bar3"></div>
+        </div>
+    </div>
+    <div class="progress4">
+        <p>Python</p>
+        <div class="progress">
+            <div class="progress-bar progress-bar4"></div>
+        </div>
+    </div>
 
 
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed(".multiple-skills", {
-            strings: ["skills","abilities"],
+            strings: ["skills", "abilities"],
             typeSpeed: 100,
             backSpeed: 100,
             backdelay: 1500,
             loop: true,
         })
+
         function setProgress(progress, progressBar) {
             let width = 0;
             const animate = () => {
@@ -61,7 +75,6 @@
             window.requestAnimationFrame(animate);
         }
 
-
         const progressBar1 = document.querySelector('.progress-bar1');
         setProgress(50, progressBar1);
 
@@ -71,7 +84,10 @@
         const progressBar3 = document.querySelector('.progress-bar3');
         setProgress(25, progressBar3);
 
+        const progressBar4 = document.querySelector('.progress-bar4');
+        setProgress(30, progressBar4);
     </script>
+
 
 </body>
 </html>
