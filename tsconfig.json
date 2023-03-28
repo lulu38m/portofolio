@@ -1,0 +1,29 @@
+{
+    "header": {
+        "logo": "Portfolio",
+        "navbar": {
+            "home": "Accueil",
+            "about": "À propos",
+            "skills": "Compétences",
+            "contact": "Contact"
+        }
+    },
+    "home": {
+        "hello": "Bonjour, c'est moi",
+        "name": "Lucas Moreau",
+        "profession": "Et je suis un(e)",
+        "professionList": [
+            "Développeur Web",
+            "Designer UI/UX",
+            "Spécialiste en SEO"
+        ],
+        "description": "Je crée des choses simplement magnifiques et j'aime ce que je fais.",
+        "socialMedia": {
+            "linkedin": "https://www.linkedin.com/in/lucas-moreau1/",
+            "github": "https://github.com/lulu38m",
+            "instagram": "https://www.instagram.com/lulu_38m/",
+            "twitter": "https://twitter.com/lulu_38m"
+        }
+    }
+}
+

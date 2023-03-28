@@ -8,86 +8,114 @@
     <title>Skills</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="#" class="logo"> Portfolio</a>
+<header class="header">
+    <div class="logo">
+        <a href="#" class="logo"> Portfolio</a>
+    </div>
+    <nav class="navbar">
+        <a href="index.html" style="--i:1">Home</a>
+        <a href="about.html" style="--i:2">About</a>
+        <a href="skills.html" class="active" style="--i:3">Skills</a>
+        <a href="#" style="--i:4">contact</a>
+    </nav>
+</header>
+
+<section class="skills">
+    <div class="skills-content">
+        <h1>My <span class="multiple-skills"></span></h1>
+    </div>
+    <div class="skill-container">
+        <div class="skills-container-left">
+            <div class="progress1">
+                <img src="assets/img/htmlCss.png" alt="logo HTML/CSS">
+                <p>HTML/CSS</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar1"></div>
+                </div>
+            </div>
+            <div class="progress2">
+                <img src="assets/img/js.png" alt="logo JavaScript">
+                <p>JavaScript</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar2"></div>
+                </div>
+            </div>
+            <div class="progress3">
+                <img src="assets/img/php.png" alt="logo Php">
+                <p>PHP</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar3"></div>
+                </div>
+            </div>
         </div>
-        <nav class="navbar">
-            <a href="index.html" style="--i:1">Home</a>
-            <a href="about.html" style="--i:2">About</a>
-            <a href="skills.html" class="active" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">contact</a>
-        </nav>
-    </header>
-
-    <section class="skills">
-        <div class="skills-content">
-            <h1>My <span class="multiple-skills"></span></h1>
-        </div>
-
-    </section>
-
-    <div class="progress1">
-        <p>HTML/CSS</p>
-        <div class="progress">
-            <div class="progress-bar progress-bar1"></div>
+        <div class="skills-container-right">
+            <div class="progress4">
+                <img src="assets/img/python.png" alt="logo Python">
+                <p>Python</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar4"></div>
+                </div>
+            </div>
+            <div class="progress5">
+                <img src="assets/img/C.png" alt="C">
+                <p>C/C++</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar5"></div>
+                </div>
+            </div>
+            <div class="progress6">
+                <img src="assets/img/htmlCss.png" alt="logo Mysql">
+                <p>MySql</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar6"></div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="progress2">
-        <p>JavaScript</p>
-        <div class="progress">
-            <div class="progress-bar progress-bar2"></div>
-        </div>
-    </div>
-    <div class="progress3">
-        <p>PHP</p>
-        <div class="progress">
-            <div class="progress-bar progress-bar3"></div>
-        </div>
-    </div>
-    <div class="progress4">
-        <p>Python</p>
-        <div class="progress">
-            <div class="progress-bar progress-bar4"></div>
-        </div>
-    </div>
+</section>
 
 
-    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed(".multiple-skills", {
-            strings: ["skills", "abilities"],
-            typeSpeed: 100,
-            backSpeed: 100,
-            backdelay: 1500,
-            loop: true,
-        })
 
-        function setProgress(progress, progressBar) {
-            let width = 0;
-            const animate = () => {
-                if (width < progress) {
-                    width++;
-                    progressBar.style.width = width + '%';
-                    window.requestAnimationFrame(animate);
-                }
-            };
-            window.requestAnimationFrame(animate);
-        }
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".multiple-skills", {
+        strings: ["skills", "abilities"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backdelay: 1500,
+        loop: true,
+    })
 
-        const progressBar1 = document.querySelector('.progress-bar1');
-        setProgress(50, progressBar1);
+    function setProgress(progress, progressBar) {
+        let width = 0;
+        const animate = () => {
+            if (width < progress) {
+                width++;
+                progressBar.style.width = width + '%';
+                window.requestAnimationFrame(animate);
+            }
+        };
+        window.requestAnimationFrame(animate);
+    }
 
-        const progressBar2 = document.querySelector('.progress-bar2');
-        setProgress(75, progressBar2);
+    const progressBar1 = document.querySelector('.progress-bar1');
+    setProgress(50, progressBar1);
 
-        const progressBar3 = document.querySelector('.progress-bar3');
-        setProgress(25, progressBar3);
+    const progressBar2 = document.querySelector('.progress-bar2');
+    setProgress(75, progressBar2);
 
-        const progressBar4 = document.querySelector('.progress-bar4');
-        setProgress(30, progressBar4);
-    </script>
+    const progressBar3 = document.querySelector('.progress-bar3');
+    setProgress(25, progressBar3);
 
+    const progressBar4 = document.querySelector('.progress-bar4');
+    setProgress(30, progressBar4);
+
+    const progressBar5 = document.querySelector('.progress-bar5');
+    setProgress(20, progressBar5);
+
+    const progressBar6 = document.querySelector('.progress-bar6');
+    setProgress(10, progressBar6);
+</script>
 
 </body>
 </html>
