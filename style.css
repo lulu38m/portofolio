@@ -377,6 +377,36 @@ body {
     animation-delay: .1s;
     color: var(--jaune);
 }
+.progress {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+    width: 25%;
+}
+
+.progress-bar {
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+}
+
+.progress-bar1 {
+    background-color: var(--jaune);
+    transition: width 1s ease-in-out;
+}
+
+.progress-bar2 {
+    background-color: var(--jaune);
+    transition: width 1s ease-in-out;
+}
+
+.progress-bar3 {
+    background-color: var(--jaune);
+    transition: width 1s ease-in-out;
+}
+
+
 
 
 

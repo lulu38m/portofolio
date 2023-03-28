@@ -24,7 +24,21 @@
         <div class="skills-content">
             <h1>My <span class="multiple-skills"></span></h1>
         </div>
+
     </section>
+    <div class="progress">
+        <div class="progress-bar progress-bar1"></div>
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar2"></div>
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar3"></div>
+    </div>
+
+
 
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script>
@@ -35,6 +49,28 @@
             backdelay: 1500,
             loop: true,
         })
+        function setProgress(progress, progressBar) {
+            let width = 0;
+            const animate = () => {
+                if (width < progress) {
+                    width++;
+                    progressBar.style.width = width + '%';
+                    window.requestAnimationFrame(animate);
+                }
+            };
+            window.requestAnimationFrame(animate);
+        }
+
+
+        const progressBar1 = document.querySelector('.progress-bar1');
+        setProgress(50, progressBar1);
+
+        const progressBar2 = document.querySelector('.progress-bar2');
+        setProgress(75, progressBar2);
+
+        const progressBar3 = document.querySelector('.progress-bar3');
+        setProgress(25, progressBar3);
+
     </script>
 
 </body>
