@@ -11,7 +11,7 @@
     "home": {
         "hello": "Bonjour, c'est moi",
         "name": "Lucas Moreau",
-        "profession": "Et je suis un(e)",
+        "profession": "Et je suis un développeur web",
         "professionList": [
             "Développeur Web",
             "Designer UI/UX",

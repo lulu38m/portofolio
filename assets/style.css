@@ -443,7 +443,17 @@ body {
 
 
 
+/*language*/
 
-
-
-
+.header img {
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+}
+.header button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .1s;
+}
