@@ -1,0 +1,21 @@
+{
+  "title" : "portfolio",
+
+    "nav.home": "Accueil",
+    "nav.about": "A propos",
+    "nav.skills": "Compétences",
+
+
+    "hello.home": "Bonjour, c'est moi",
+    "im.home": "Et je suis ",
+    "p.home": "Je code des choses magnifiquement simples et j'aime ce que je fais.",
+
+    "title.about": "A propos de ",
+    "download.about": "Télécharger mon CV",
+    "title.hobbies": "Centres d'intérêts",
+    "years.hobbies": "10 ans",
+    "years.hobbies2": "6 ans",
+    "rank.hobbies": "classement : 15/5",
+
+    "title.skills": "Mes "
+}
