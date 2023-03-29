@@ -6,18 +6,7 @@ var typed = new Typed(".me", {
     loop: true,
 })
 
-const flagButton = document.getElementById('flagButton');
-const flagImg = flagButton.querySelector('img');
-const angFlag = 'assets/img/AngFlag.png';
-const frFlag = 'assets/img/FrFlag.png';
 
-flagButton.addEventListener('click', () => {
-    if (flagImg.src.includes(angFlag)) {
-        flagImg.src = frFlag;
-    } else {
-        flagImg.src = angFlag;
-    }
-});
 const url = 'src/data/lang/';
 let languageData;
 let language;

@@ -1,13 +1,3 @@
-var typed = new Typed(".multiple-text", {
-    strings: ["Student","Developer"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backdelay: 1500,
-    loop: true,
-})
-
-
-
 const url = 'src/data/lang/';
 let languageData;
 let language;

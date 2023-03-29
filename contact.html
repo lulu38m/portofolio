@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="src/assets/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html"  style="--i:1" data-lang="nav.home">Home</a>
+        <a href="about.html" style="--i:2" data-lang="nav.about">About</a>
+        <a href="skills.html" style="--i:3" data-lang="nav.skills">Skills</a>
+        <a href="contact.html" class="active" style="--i:4">contact</a>
+    </nav>
+
+    <button class="lang=lang.french.button" onclick="changeLanguage(lang_fr)"><img src="src/assets/img/FrFlag.png"></button>
+    <button class="lang=lang.english.button" onclick="changeLanguage(lang_en)"><img  src="src/assets/img/AngFlag.png"></button>
+
+
+</header>
+
+<section class="about">
+    <div class="left">
+        <div class="about-content">
+            <div class="about-header">
+                <div class="about-img">
+                    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                    <lord-icon
+                            src="https://cdn.lordicon.com/rhvddzym.json"
+                            trigger="loop"
+                            delay="1500"
+                            colors="primary:#f1c40f,secondary:#08a88a"
+                            style="width:150px;height:150px">
+                    </lord-icon>
+                </div>
+                <div class="about-title">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+            <div class="about-section">
+                <div class="about-text">
+                    <p data-lang="im.about">If you want to contact me,<br>
+                        here are my networks and my email !
+                    </p>
+
+                </div>
+                <div class="social-media-about">
+                    <a href="https://www.linkedin.com/in/lucas-moreau1/" style="--i:5"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/lulu38m" style="--i:6"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/lulu_38m/" style="--i:7"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://twitter.com/lulu_38m" style="--i:8"><i class='bx bxl-twitter'></i></a>
+                    <a href="mailto:lucas.moreau@outlook.com" style="--i:9"><i class='bx bx-envelope'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="about-img">
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon
+                    src="https://cdn.lordicon.com/zpxybbhl.json"
+                    trigger="loop"
+                    delay="2000"
+                    colors="primary:#f1c40f,secondary:#ffffff"
+                    style="width:350px;height:350px">
+            </lord-icon>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+<script src="src/script/contact.js"></script>
+</body>
+</html>
+
