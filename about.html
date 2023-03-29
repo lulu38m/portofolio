@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="src/assets/style.css">
     <title>About me</title>
 </head>
 <body>
 <header class="header">
     <nav class="navbar">
-        <a href="index.html" style="--i:1">Home</a>
-        <a href="about.html" class="active" style="--i:2">About</a>
-        <a href="skills.html" style="--i:3">Skills</a>
+        <a href="index.html" style="--i:1" data-lang="nav.home">Home</a>
+        <a href="about.html" class="active" style="--i:2" data-lang="nav.about">About</a>
+        <a href="skills.html" style="--i:3" data-lang="nav.skills">Skills</a>
         <a href="#" style="--i:4">contact</a>
     </nav>
 
-    <button><img src="assets/img/AngFlag.png"></button>
+    <button id="flagButton"><img src="src/assets/img/AngFlag.png"></button>
+    <button class="lang=lang.french.button" onclick="changeLanguage(lang_fr)">fr</button>
+    <button class="lang=lang.english.button" onclick="changeLanguage(lang_en)">en</button>
+
 </header>
 
 <section class="about">
@@ -35,12 +38,12 @@
                     </lord-icon>
                 </div>
                 <div class="about-title">
-                    <h1>About <span class="me"></span></h1>
+                    <h1 data-lang="title.about">About <span class="me"></span></h1>
                 </div>
             </div>
             <div class="about-section">
                 <div class="about-text">
-                    <p>I'm Lucas Moreau,<br>
+                    <p data-lang="im.about">I'm Lucas Moreau,<br>
                         Passionate student in computer science, currently in first year at <a
                                 href="https://www.supinfo.com/">Supinfo</a>.
                         Mainly oriented in backend/frontend web development.
@@ -59,11 +62,11 @@
     </div>
     <div class="right">
         <div class="download">
-            <a href="CVMoreauLucas.pdf" download class="btn">download my CV</a>
+            <a href="CVMoreauLucas.pdf" download class="btn" data-lang="download.about">download my CV</a>
         </div>
         <div class="about-content">
             <div class="about-right-title">
-                <h2>Hobbies</h2>
+                <h2 data-lang="title.hobbies">Hobbies</h2>
             </div>
             <div class="about-right-section">
                 <div class="card-bike">
@@ -75,13 +78,13 @@
                             style="width:80px;height:80px">
                     </lord-icon>
                     <p>BMX</p>
-                    <p>10 years</p>
+                    <p data-lang="years.hobbies">10 years</p>
                 </div>
                 <div class="card-tennis">
                     <i class='bx bxs-tennis-ball bx-rotate-90'></i>
                     <p>tennis</p>
-                    <p>6 years</p>
-                    <p>ranking : 15/5</p>
+                    <p data-lang="years.hobbies2">6 years</p>
+                    <p data-lang="rank.hobbies">ranking : 15/5</p>
                 </div>
             </div>
         </div>
@@ -90,15 +93,7 @@
 
 
 <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-<script>
-    var typed = new Typed(".me", {
-        strings: ["me", ""],
-        typeSpeed: 150,
-        backSpeed: 150,
-        backdelay: 15000,
-        loop: true,
-    })
-</script>
+<script src="src/script/about.js"></script>
 
 </body>
 </html>

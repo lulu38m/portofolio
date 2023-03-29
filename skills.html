@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns:width="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="src/assets/style.css">
     <title>Skills</title>
 </head>
 <body>
 <header class="header">
     <nav class="navbar">
-        <a href="index.html" style="--i:1">Home</a>
-        <a href="about.html" style="--i:2">About</a>
-        <a href="skills.html" class="active" style="--i:3">Skills</a>
+        <a href="index.html" style="--i:1" data-lang="nav.home">Home</a>
+        <a href="about.html" style="--i:2" data-lang="nav.about">About</a>
+        <a href="skills.html" class="active" style="--i:3" data-lang="nav.skills">Skills</a>
         <a href="#" style="--i:4">contact</a>
     </nav>
 
-    <button><img src="assets/img/AngFlag.png"></button>
+    <button id="flagButton"><img src="src/assets/img/AngFlag.png"></button>
+    <button class="lang=lang.french.button" onclick="changeLanguage(lang_fr)">fr</button>
+    <button class="lang=lang.english.button" onclick="changeLanguage(lang_en)">en</button>
 
 </header>
 
@@ -35,27 +37,27 @@
                 </lord-icon>
             </div>
             <div class="skills-title">
-                <h1>My <span class="multiple-skills"></span></h1>
+                <h1 data-lang="title.skills">My <span class="multiple-skills"></span></h1>
             </div>
         </div>
             <div class="skill-container">
                 <div class="skills-container-left">
                     <div class="progress1">
-                        <img src="assets/img/htmlCss.png" alt="logo HTML/CSS">
+                        <img src="src/assets/img/htmlCss.png" alt="logo HTML/CSS" width="80" height="50">
                         <p>HTML/CSS</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar1"></div>
                         </div>
                     </div>
                     <div class="progress2">
-                        <img src="assets/img/js.png" alt="logo JavaScript">
+                        <img src="src/assets/img/js.png" alt="logo JavaScript" width="80" height="50">
                         <p>JavaScript</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar2"></div>
                         </div>
                     </div>
                     <div class="progress3">
-                        <img src="assets/img/php.png" alt="logo Php">
+                        <img src="src/assets/img/php.png" alt="logo Php" width="80" height="50">
                         <p>PHP</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar3"></div>
@@ -64,21 +66,21 @@
                 </div>
                 <div class="skills-container-right">
                     <div class="progress4">
-                        <img src="assets/img/python.png" alt="logo Python">
+                        <img src="src/assets/img/python.png" alt="logo Python" width="80" height="50">
                         <p>Python</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar4"></div>
                         </div>
                     </div>
                     <div class="progress5">
-                        <img src="assets/img/C.png" alt="C">
+                        <img src="src/assets/img/C.png" alt="C" width="80" height="50">
                         <p>C/C++</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar5"></div>
                         </div>
                     </div>
                     <div class="progress6">
-                        <img src="assets/img/htmlCss.png" alt="logo Mysql">
+                        <img src="src/assets/img/htmlCss.png" alt="logo Mysql" width="80" height="50">
                         <p>MySql</p>
                         <div class="progress">
                             <div class="progress-bar progress-bar6"></div>
@@ -91,45 +93,7 @@
 
 
 <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-<script>
-    var typed = new Typed(".multiple-skills", {
-        strings: ["skills", "abilities"],
-        typeSpeed: 100,
-        backSpeed: 100,
-        backdelay: 1500,
-        loop: true,
-    })
-
-    function setProgress(progress, progressBar) {
-        let width = 0;
-        const animate = () => {
-            if (width < progress) {
-                width++;
-                progressBar.style.width = width + '%';
-                window.requestAnimationFrame(animate);
-            }
-        };
-        window.requestAnimationFrame(animate);
-    }
-
-    const progressBar1 = document.querySelector('.progress-bar1');
-    setProgress(50, progressBar1);
-
-    const progressBar2 = document.querySelector('.progress-bar2');
-    setProgress(75, progressBar2);
-
-    const progressBar3 = document.querySelector('.progress-bar3');
-    setProgress(25, progressBar3);
-
-    const progressBar4 = document.querySelector('.progress-bar4');
-    setProgress(30, progressBar4);
-
-    const progressBar5 = document.querySelector('.progress-bar5');
-    setProgress(20, progressBar5);
-
-    const progressBar6 = document.querySelector('.progress-bar6');
-    setProgress(10, progressBar6);
-</script>
+<script src="src/script/skills.js"></script>
 
 </body>
 </html>
