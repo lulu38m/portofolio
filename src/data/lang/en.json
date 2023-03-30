@@ -7,6 +7,9 @@
     "nav.skills": "Skills",
     "hello.home": "Hello, it's me",
     "im.home": "And i'm a ",
+    "im.about1": "I'm Lucas Moreau,",
+    "im.about2": "Passionate student in computer science, currently in first year at",
+    "im.about3": "Mainly oriented in backend/frontend web development.",
     "p.home": "I code beautifully simple things, and i love what i do.",
 
     "title.about": "About ",
@@ -16,6 +19,11 @@
     "years.hobbies2": "6 years",
     "rank.hobbies": "ranking : 15/5",
 
-    "title.skills": "My "
+    "title.skills": "My ",
+
+    "text.contact":"If you want to contact me,",
+    "text.contact2": "here are my social networks and my email !",
+    "phone.contact": "Pssssst",
+    "phone.contact2": "You can also call me by phone !"
 }
 

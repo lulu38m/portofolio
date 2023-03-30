@@ -8,6 +8,9 @@
 
     "hello.home": "Bonjour, c'est moi",
     "im.home": "Et je suis ",
+  "im.about1": "Je m'appelle Lucas Moreau,",
+    "im.about2": "Étudiant passionné d'informatique, actuellement en première année à ",
+    "im.about3": "Principalement orienté vers le développement web backend/frontend.",
     "p.home": "Je code des choses magnifiquement simples et j'aime ce que je fais.",
 
     "title.about": "A propos de ",
@@ -17,5 +20,10 @@
     "years.hobbies2": "6 ans",
     "rank.hobbies": "classement : 15/5",
 
-    "title.skills": "Mes "
+    "title.skills": "Mes ",
+
+    "text.contact":"Si vous souhaitez me contacter,",
+  "text.contact2": "voici mes reseaux sociaux et mon mail !",
+    "phone.contact": "Pssssst",
+    "phone.contact2": "Vous pouvez aussi me téléphoner !"
 }
