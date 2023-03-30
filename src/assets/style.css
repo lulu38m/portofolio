@@ -20,6 +20,7 @@ body {
     box-sizing: border-box;
 }
 
+
 .header {
     position: fixed;
     top: 0;
@@ -245,7 +246,23 @@ body {
     box-shadow: 0 0 8px var(--jaune);
 }
 
-.btn {
+
+.btn1 {
+    background-color: var(--jaune);
+    font-size: 20px;
+    color: white;
+    padding: 16px 28px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .3s;
+}
+
+.btn2 {
     background-color: var(--jaune);
     font-size: 20px;
     color: white;
@@ -530,7 +547,7 @@ body {
 
 .phone {
     float: right;
-    margin-right: 20px;
+    margin-right: 5%;
     animation: slideLeft 1s ease forwards;
     animation-delay: .3s;
 }

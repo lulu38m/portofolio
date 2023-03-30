@@ -13,6 +13,25 @@ let language;
 
 const lang_fr = "fr";
 const lang_en = "en";
+let currentLanguage = localStorage.getItem("language") || lang_en;
+const languageToggle = document.getElementById("language-toggle");
+const languageIcon = document.getElementById("language-icon");
+
+function toggleLanguage() {
+    if (currentLanguage === lang_en) {
+        currentLanguage = lang_fr;
+        languageIcon.src = "src/assets/img/FrFlag.png";
+    } else {
+        currentLanguage = lang_en;
+        languageIcon.src = "src/assets/img/AngFlag.png";
+    }
+    localStorage.setItem("language", currentLanguage);
+    changeLanguage(currentLanguage);
+}
+
+window.onload = function() {
+    init(currentLanguage);
+}
 
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();

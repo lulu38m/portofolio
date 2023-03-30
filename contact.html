@@ -14,12 +14,11 @@
         <a href="index.html" style="--i:1" data-lang="nav.home">Home</a>
         <a href="about.html" style="--i:2" data-lang="nav.about">About</a>
         <a href="skills.html" style="--i:3" data-lang="nav.skills">Skills</a>
-        <a href="contact.html" class="active" style="--i:4">contact</a>
+        <a href="contact.html" class="active" style="--i:4">Contact</a>
     </nav>
 
-    <button class="lang=lang.french.button" onclick="changeLanguage(lang_fr)"><img src="src/assets/img/FrFlag.png">
-    </button>
-    <button class="lang=lang.english.button" onclick="changeLanguage(lang_en)"><img src="src/assets/img/AngFlag.png">
+    <button id="language-toggle" class="lang=lang.french.button" onclick="toggleLanguage()">
+        <img id="language-icon" src="src/assets/img/FrFlag.png">
     </button>
 
 
