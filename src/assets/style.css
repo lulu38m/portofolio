@@ -140,6 +140,25 @@ body {
     padding-bottom: 5%;
 }
 
+.btn1 {
+    background-color: var(--jaune);
+    font-size: 20px;
+    color: white;
+    padding: 16px 28px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .3s;
+}
+
+.btn1:hover {
+    box-shadow: 0 0 8px var(--jaune);
+}
+
 @keyframes slideRight {
     0% {
         opacity: 0;
@@ -247,20 +266,6 @@ body {
 }
 
 
-.btn1 {
-    background-color: var(--jaune);
-    font-size: 20px;
-    color: white;
-    padding: 16px 28px;
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px 0px 10px 0px;
-    cursor: pointer;
-    animation: slideTop 1s ease forwards;
-    animation-delay: .3s;
-}
 
 .btn2 {
     background-color: var(--jaune);
@@ -275,9 +280,8 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
-
-.btn:hover {
-    transform: scale(1.05);
+.btn2:hover {
+    box-shadow: 0 0 8px var(--jaune);
 }
 
 .about-header {
